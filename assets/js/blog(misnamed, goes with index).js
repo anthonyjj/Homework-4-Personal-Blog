@@ -20,12 +20,12 @@ const disableDarkMode = () => {
     document.body.classList.remove("dark-mode");
 }
 
-// Get the input values from the first page
+//replaces blog
 const urlParams = new URLSearchParams(window.location.search);
 const blogTitle = urlParams.get('title');
 const blogContent = urlParams.get('content');
 
-// Update the blog title and content
+
 const titleElement = document.querySelector('.blog-title');
 const contentElement = document.querySelector('.content');
 
@@ -52,3 +52,15 @@ function navigateToBlog() {
     // Redirect the user to the blog page
     window.location.href = url;
 }
+
+/*document.addEventListener('DOMContentLoaded', function() {
+    // Get the query parameters from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('username');
+    const title = urlParams.get('title');
+    const content = urlParams.get('content');
+
+    // Update the blog title and content with the query parameter values
+    document.querySelector('.First').textContent = username + "'s Blog";
+    document.querySelector('.blog-title').textContent = title;
+    document.querySelector('.content').textContent = content;*/

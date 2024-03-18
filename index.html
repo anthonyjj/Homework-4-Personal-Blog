@@ -6,7 +6,7 @@
     <title>My Blog</title>
 
     <!--linking css onto page-->
-    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/blog (misnamed, goes with index).css">
 </head>
 <body>
     
@@ -49,6 +49,21 @@
     <button type="submit" onclick="navigateToBlog()">Submit</button>
     </main>
     <!--Linking javascript onto page-->
-    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/blog(misnamed, goes with index).js"></script>
+
+    <!--<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the query parameters from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+        const title = urlParams.get('title');
+        const content = urlParams.get('content');
+    
+        // Update the blog title and content with the query parameter values
+        document.querySelector('.username').textContent = username + "'s Blog";
+        document.querySelector('.blog-title').textContent = title;
+        document.querySelector('.content').textContent = content;
+    });
+    </script>-->
 </body>
 </html>

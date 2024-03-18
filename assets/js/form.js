@@ -19,3 +19,4 @@ const enableDarkMode = () => {
 const disableDarkMode = () => {
     document.body.classList.remove("dark-mode");
 }
+
